@@ -74,6 +74,7 @@ table {
   box-shadow: rgba(0,0,0,0.25) 0 5px 15px 0;
   border-radius: 3px;
 }
+/* board styles */
 .board-wrapper {
   position: absolute;
   top: 70px;
@@ -127,6 +128,7 @@ table {
 .board-row:nth-child(even) .board-cell:nth-child(odd) {
   background: #ededed;
 }
+/* captured box styles */
 .captured {
   width: 256px;
   margin-top: 286px;
@@ -162,6 +164,7 @@ table {
 .captured-score {
   font-size: 0.85em;
   padding-right: 20px;
+  vertical-align: middle;
 }
 .captured-box {
   margin-left: -10px;
@@ -170,6 +173,7 @@ table {
 .captured-box .piece {
   margin: 10px 0 0 10px;
 }
+/* games features */
 .game-checkers .board-row:nth-child(odd) .board-cell:nth-child(even),
 .game-checkers .board-row:nth-child(even) .board-cell:nth-child(odd) {
   background-image: -webkit-gradient(
@@ -185,7 +189,6 @@ table {
   background-image: -ms-linear-gradient(top, #C4C4C4 0%, #E8E8E8 100%);
   background-image: linear-gradient(to top, #C4C4C4 0%, #E8E8E8 100%);
 }
-
 .game-chess .board-row:nth-child(odd) .board-cell:nth-child(even),
 .game-chess .board-row:nth-child(even) .board-cell:nth-child(odd) {
   background: #DAECD9;
@@ -203,7 +206,6 @@ table {
   background-image: linear-gradient(to top, #C1F0BD 0%, #DAECD9 100%);
   box-shadow: rgba(0,0,0,0.1) 0 0 2px 0px inset;
 }
-
 .game-othello .board-row:nth-child(odd) .board-cell:nth-child(even),
 .game-othello .board-row:nth-child(even) .board-cell:nth-child(odd) {
   background: #DAECD9;
@@ -221,7 +223,6 @@ table {
   background-image: linear-gradient(to right bottom, #C1F0BD 0%, #D8F5D5 100%);
   box-shadow: rgba(0,0,0,0.1) 0 0 2px 0px inset;
 }
-
 .game-checkers .piece,
 .game-othello .piece {
   display: inline-block;
@@ -232,6 +233,7 @@ table {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  transition: all 0.25s ease-in;
 }
 .game-checkers .piece.black {
   color: #000;
@@ -248,9 +250,6 @@ table {
               rgba(255,255,255,0.45) 0 0 0 3px inset,
               rgba(0,0,0,0.25) 0 2px 1px 0;
 }
-.game-othello .piece {
-  transition: all 0.25s ease-in;
-}
 .game-othello .piece.black {
   color: #111;
   background-color: #111;
@@ -266,7 +265,6 @@ table {
   rgba(255,255,255,0.45) 0 0 0 3px inset,
   rgba(0,0,0,0.25) 0 2px 1px 0;
 }
-
 .game-othello .captured-box {
   width: 60px;
   height: 60px;
@@ -290,17 +288,14 @@ table {
 
 .fl {float: left;}
 .fr {float: right;}
-
 .cf:before,
 .cf:after {
   content: " ";
   display: table;
 }
-
 .cf:after {
   clear: both;
 }
-
 
 @media all and (max-width: 768px) {
   .games {

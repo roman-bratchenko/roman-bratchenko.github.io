@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="games">
+        <section class="game game-checkers">
+            <h1 class="game-header">Princess Bubblegum</h1>
+            <div class="captured">
+                <h2 class="captured-header">Captured Pieces</h2>
+                <div class="captured-set">
+                    <div class="captured-box">
+                        <span class="piece black"></span>
+                        <span class="piece black"></span>
+                        <span class="piece black"></span>
+                        <span class="piece black"></span>
+                        <span class="piece black"></span>
+                        <span class="piece black"></span>
+                    </div>
+                    <div class="captured-box">
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                        <span class="piece red"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="board-wrapper">
+                <h2 class="board-header">Checkers</h2>
+                <div class="board">
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece red"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece red"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece red"></span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- "game-active" and "game-over" are status classes -->
+        <section class="game game-chess game-active">
+            <h1 class="game-header">Your Turn</h1>
+            <div class="captured">
+                <h2 class="captured-header">Captured Pieces</h2>
+                <div class="captured-set captured-table">
+                    <div class="captured-row">
+                        <div class="captured-cell captured-score">36</div>
+                        <div class="captured-cell capured-pieces">
+                            <span class="piece">&#9812;</span>
+                            <span class="piece">&#9814;</span>
+                            <span class="piece">&#9814;</span>
+                            <span class="piece">&#9815;</span>
+                            <span class="piece">&#9815;</span>
+                            <span class="piece">&#9816;</span>
+                            <span class="piece">&#9816;</span>
+                            <span class="piece">&#9817;</span>
+                            <span class="piece">&#9817;</span>
+                            <span class="piece">&#9817;</span>
+                            <span class="piece">&#9817;</span>
+                            <span class="piece">&#9817;</span>
+                        </div>
+                    </div>
+                    <div class="captured-row">
+                        <div class="captured-cell captured-score">22</div>
+                        <div class="captured-cell capured-pieces">
+                            <span class="piece">&#9820;</span>
+                            <span class="piece">&#9821;</span>
+                            <span class="piece">&#9821;</span>
+                            <span class="piece">&#9822;</span>
+                            <span class="piece">&#9822;</span>
+                            <span class="piece">&#9823;</span>
+                            <span class="piece">&#9823;</span>
+                            <span class="piece">&#9823;</span>
+                            <span class="piece">&#9823;</span>
+                            <span class="piece">&#9823;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="board-wrapper">
+                <h2 class="board-header">Chess</h2>
+                <div class="board">
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9813;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9817;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9817;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9817;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9823;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9823;</span></div>
+                        <div class="board-cell"><span class="piece">&#9823;</span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9820;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9819;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"><span class="piece">&#9818;</span></div>
+                        <div class="board-cell"></div>
+                        <div class="board-cell"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="game game-othello game-over">
+            <h1 class="game-header">Princess Bubblegum</h1>
+            <div class="captured">
+                <h2 class="captured-header">Disks per player</h2>
+                <div class="captured-set cf">
+                    <div class="captured-box white fl">35</div>
+                    <div class="captured-box black fr">29</div>
+                </div>
+            </div>
+            <div class="board-wrapper">
+                <h2 class="board-header">Othello</h2>
+                <div class="game-status">
+                    <span class="game-status-label">You Won!</span>
+                </div>
+                <div class="board">
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                    </div>
+                    <div class="board-row">
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece white"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                        <div class="board-cell"><span class="piece black"></span></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

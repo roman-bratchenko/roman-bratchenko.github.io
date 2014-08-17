@@ -42,9 +42,11 @@ table {
   white-space: nowrap;
   margin: 0 0 0.75em 0;
 }
+/* game over case */
 .game-over .game-header {
   visibility: hidden;
 }
+/* game status box over board */
 .game-status {
   position: absolute;
   width: 100%;
@@ -124,6 +126,7 @@ table {
   background-image: -ms-linear-gradient(bottom, #FCFCFC 0%, #FAFAFA 100%);
   background-image: linear-gradient(to bottom, #FCFCFC 0%, #FAFAFA 100%);
 }
+/* coloring cells of a board */
 .board-row:nth-child(odd) .board-cell:nth-child(even),
 .board-row:nth-child(even) .board-cell:nth-child(odd) {
   background: #ededed;
@@ -133,6 +136,7 @@ table {
   width: 256px;
   margin-top: 286px;
 }
+/* captured box elements container */
 .captured-set {
   padding: 0 10px 10px 10px;
   box-shadow: rgba(0,0,0,0.1) 0 2px 4px 1px inset;
@@ -143,6 +147,13 @@ table {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+.captured-header {
+  font-weight: normal;
+  font-size: 0.95em;
+  margin: 2em 0 0.5em 0;
+  text-shadow: #fff 0 1px 0;
+}
+/* captured box table for chess pieces and scores */
 .captured-table {
   display: table;
   padding-top: 0;
@@ -155,17 +166,12 @@ table {
   text-align: left;
   padding-top: 10px;
 }
-.captured-header {
-  font-weight: normal;
-  font-size: 0.95em;
-  margin: 2em 0 0.5em 0;
-  text-shadow: #fff 0 1px 0;
-}
 .captured-score {
   font-size: 0.85em;
   padding-right: 20px;
   vertical-align: middle;
 }
+/* captured boxes are used where no need to have scores */
 .captured-box {
   margin-left: -10px;
   text-align: left;
@@ -174,6 +180,7 @@ table {
   margin: 10px 0 0 10px;
 }
 /* games features */
+/* boards colors for different games */
 .game-checkers .board-row:nth-child(odd) .board-cell:nth-child(even),
 .game-checkers .board-row:nth-child(even) .board-cell:nth-child(odd) {
   background-image: -webkit-gradient(
@@ -223,6 +230,7 @@ table {
   background-image: linear-gradient(to right bottom, #C1F0BD 0%, #D8F5D5 100%);
   box-shadow: rgba(0,0,0,0.1) 0 0 2px 0px inset;
 }
+/* boards pieces for different games */
 .game-checkers .piece,
 .game-othello .piece {
   display: inline-block;
@@ -250,6 +258,7 @@ table {
               rgba(255,255,255,0.45) 0 0 0 3px inset,
               rgba(0,0,0,0.25) 0 2px 1px 0;
 }
+/* othello's pieces */
 .game-othello .piece.black {
   color: #111;
   background-color: #111;
@@ -265,6 +274,7 @@ table {
   rgba(255,255,255,0.45) 0 0 0 3px inset,
   rgba(0,0,0,0.25) 0 2px 1px 0;
 }
+/* othello's captured styles */
 .game-othello .captured-box {
   width: 60px;
   height: 60px;
